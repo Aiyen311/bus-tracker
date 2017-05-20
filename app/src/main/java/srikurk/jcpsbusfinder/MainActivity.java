@@ -5,6 +5,7 @@
 
 package srikurk.jcpsbusfinder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -84,7 +85,8 @@ public class MainActivity extends AppCompatActivity
             // Open my buses
         } else if (id == R.id.nav_map) {
             //Open maps
-
+            Intent mapIntent = new Intent(this, MapActivity.class);
+            startActivity(mapIntent);
         } else if (id == R.id.nav_school) {
             //Open my schools
         } else if (id == R.id.nav_stop) {
