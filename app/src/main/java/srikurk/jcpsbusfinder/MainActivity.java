@@ -1,3 +1,8 @@
+/*
+*   Created by Srikur Kanuparthy and Adithya Iyengar
+*   Copyright 2017 All Rights Reserved
+* */
+
 package srikurk.jcpsbusfinder;
 
 import android.os.Bundle;
