@@ -17,8 +17,8 @@ import butterknife.InjectView;
  * Created by adithya on 5/20/2017.
  */
 
-public class LoginActivity {
-    public class LoginScreen extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
+
         private static final String TAG = "LoginActivity";
         private static final int REQUEST_SIGNUP = 0;
 
@@ -62,7 +62,7 @@ public class LoginActivity {
 
             _loginButton.setEnabled(false);
 
-            final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this, R.style.AppTheme_Dark_Dialog);
+            final ProgressDialog progressDialog = new ProgressDialog(this, R.style.AppTheme_Dark_Dialog);
             progressDialog.setIndeterminate(true);
             progressDialog.setMessage("Authenticating...");
             progressDialog.show();
@@ -130,7 +130,4 @@ public class LoginActivity {
 
             return valid;
         }
-    }
-}
-
 }
