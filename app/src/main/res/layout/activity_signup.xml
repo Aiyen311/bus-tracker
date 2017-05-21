@@ -9,18 +9,20 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="40dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:weightSum="1">
         //add logo
+
         <ImageView
-            android:src="@drawable/ic_menu_bus"
-            android:layout_width="74dp"
+            android:id="@+id/imageView3"
+            android:layout_width="163dp"
             android:layout_height="72dp"
-            android:layout_marginBottom="24dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.07" />
+            android:layout_marginBottom="24dp"
+            android:layout_weight="0.05"
+            android:src="@drawable/logo_large" />
 
         //Name
         <android.support.design.widget.TextInputLayout
