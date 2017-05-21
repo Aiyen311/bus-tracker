@@ -5,6 +5,7 @@
 
 package srikurk.jcpsbusfinder;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -96,9 +97,22 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_settings) {
             //Open settings
         } else if (id == R.id.nav_logout) {
-            //Logout
-            Intent logOutIntent = new Intent(this, LogOutActivity.class);
-            startActivity(logOutIntent);
+            //Logou
+
+            final Intent intent = new Intent(this, LogOutActivity.class);
+
+            final ProgressDialog logoutDialog = new ProgressDialog(this, R.style.AppTheme_Dark_Dialog);
+            logoutDialog.setIndeterminate(true);
+            logoutDialog.setMessage("Logging out!");
+            logoutDialog.show();
+
+            new android.os.Handler().postDelayed(
+                    new Runnable() {
+                        public void run() {
+                            logoutDialog.dismiss();
+                            startActivity(intent);
+                        }
+                    }, 2000);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

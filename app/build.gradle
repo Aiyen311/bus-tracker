@@ -30,9 +30,7 @@ dependencies {
 
     compile 'com.google.android.gms:play-services:10.2.1'
     compile 'com.jakewharton:butterknife:6.1.0'
-
     compile 'jp.wasabeef:blurry:2.1.0'
-
     compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }
