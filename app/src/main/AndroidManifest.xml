@@ -56,6 +56,8 @@
         <activity android:name=".SignupActivity"
             android:label="Sign up" android:theme="@style/AppTheme.Dark" >
         </activity>
+        <activity android:name=".LogOutActivity" >
+        </activity>
     </application>
 
 </manifest>
