@@ -89,6 +89,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(mapIntent);
         } else if (id == R.id.nav_school) {
             //Open my schools
+            Intent schoolIntent = new Intent(this, SchoolActivity.class);
+            startActivity(schoolIntent);
         } else if (id == R.id.nav_stop) {
             //Open my stops
         } else if (id == R.id.nav_settings) {
