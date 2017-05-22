@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import srikurk.jcpsbusfinder.MainActivity;
-
 /**
  * Created by Srikur on 12/17/2016.
  */

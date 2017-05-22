@@ -10,7 +10,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
  * Created by Srikur on 5/20/2017.
  */
 
-public class MapActivity extends FragmentActivity implements OnMapReadyCallback{
+public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
